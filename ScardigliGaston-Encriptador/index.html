@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="assets/img/Logo.png" type="image/png" />
+    <title>Alura Challenge</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="container__body">
+    <main class="container__main">
+      <header class="header">
+        <figure class="container__logo">
+          <img src="assets/img/Logo.png" alt="Logo Alura Latam" />
+        </figure>
+      </header>
+      <section class="container__texto--input">
+        <textarea
+          class="texto-input"
+          placeholder="Ingrese el texto aqui"
+        ></textarea>
+
+        <p>
+          <img
+            src="assets/img/favicon.ico"
+            alt="advertencia"
+            width="16px"
+            height="16px"
+            style="margin: 2px 4px 0 0"
+          />Solo letras minúsculas y sin acentos
+        </p>
+        <div class="container__botones">
+          <button>Encriptar</button>
+          <button disabled>Desencriptar</button>
+        </div>
+      </section>
+      <section class="container__texto--encriptado">
+        <figure id="imgEncriptado" class="container__img">
+          <img
+            id="imgEncriptado"
+            src="assets/img/Muñeco.png"
+            alt="Muñeco con lupa"
+          />
+        </figure>
+        <h2>Ningún mensaje fue encontrado</h2>
+        <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+        <button id="btnCopiar">Copiar</button>
+      </section>
+    </main>
+    <footer class="container__footer">
+      <p>Scardigli Gaston</p>
+      <p>2024</p>
+    </footer>
+    <script src="logica.js"></script>
+  </body>
+</html>
